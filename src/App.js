@@ -6,7 +6,7 @@ import "./App.css";
 
 export default function App() {
   const displayFunc = (data)=> {
-    console.log(data);
+    // console.log(data);
   }
 
   return (
