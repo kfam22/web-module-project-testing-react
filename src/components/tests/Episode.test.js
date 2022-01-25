@@ -15,7 +15,7 @@ const fakeEpisode = {
 
 const fakeEpisode2 = {
     id: 222,
-    // image: null, 
+    image: null, 
     name: '', 
     season: 22, 
     number: 22, 
@@ -38,7 +38,7 @@ test("renders the summary test passed as prop", ()=>{
 test("renders default image when image is not defined", ()=>{
     render(<Episode episode={fakeEpisode2} />);
     const imageLink = screen.queryByAltText('https://i.ibb.co/2FsfXqM/stranger-things.png')
-    console.log('imagelink:', imageLink);
+    // console.log('imagelink:', imageLink);
     expect(imageLink).toBeInTheDocument();
 });
 
